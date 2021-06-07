@@ -23,11 +23,10 @@ public class Activity6 {
     public void beforeClass() throws MalformedURLException {
         // Set the Desired Capabilities
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability("deviceName", "<device name>");
+        caps.setCapability("deviceName", "pixel4Android");
         caps.setCapability("platformName", "Android");
         caps.setCapability("appPackage", "com.android.chrome");
-        caps.setCapability("appActivity", "com.google.android.apps.chrome.Main");
-        caps.setCapability("noReset", true);
+        caps.setCapability("appActivity", "apps.chrome.Main");
 
         // Instantiate Appium Driver
         URL appServer = new URL("http://0.0.0.0:4723/wd/hub");
